@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1B2855;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+p{
+    color: #fff;
+    font-size: 23px;
+    margin-top: 3px;
+}
+
+
+.logo_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* ---- HEADER ---- */
+.header{
+    background-color: #1B2855;
+    
+}
+.jf-header {
+    padding: 20px 0;
+    background-color: #1B2855;
+}
+.jf-navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 2rem;
+    gap: 25px;
+}
+.jf-menu_hamburguesa{
+    display: none;
+}
+.jf-menu_hamburguesa:checked + .jf-ul_links{
+    height: calc(100vh );
+}
+.jf-list_icon {
+    color: #fff;
+    cursor: pointer;
+}
+.jf-ul_links {
+    background-color: #1B2855;
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: height .2s;
+}
+.jf-links {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (min-width: 1500px) {
+    .jf-labe_hamburguesa{
+        display: none;
+    }
+    .jf-ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+        background-color: transparent;
+    }
+    .jf-links{
+        font-size: 17px;
+    }
+}
+
+
+
+/* ---- MAIN --- */
+.main{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+    flex: 1;
+}
+.main_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.contenedor_div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img_div{
+    width: 100%;
+    height: 300px;
+}
+.p{
+    line-height: 1.3;
+    font-size: 20px;
+    
+}
+
+.main_info{
+    max-width: 100%;
+    margin-top: 70px;
+    height: 70vh;
+    text-align: center;
+    
+}
+
+
+.img{
+    width: 50%;
+    height: 450px;
+}
+.h2{
+    color: #fff;
+    margin: 20px 0;
+}
+
+h1, h3{
+    color: #fff;
+}
+
+
+/* ---- FOOTER --- */
+
+.footer{
+    margin-top: 30px;
+    background-color: #121d42;
+    padding: 10PX 0;
+    
+}
+
+.footer_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 1300px) {
+    .contenedor_div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+
+
+/* --- VISION Y MISION --- */
+.vision{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.mision{
+    height: 70vh;
+    
+}
+.imagen{
+    width: 40%;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.vision_div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 15px;
+    margin-top: 35px;
+    padding: 15px;
+}
+
+.h2_vi{
+    color: #ffffff;
+}
+.h3{
+    margin: 20px 0;
+    font-size: 23px;
+}
+.imagenIndex{
+    height: 500px;
+}
+
+@media (max-width:1400px) {
+    .main_info{
+        text-align: center;
+        display: grid;
+        place-content: center;
+        height: 90vh;
+    }
+    .imagenIndex{
+        height: 60vh;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .img{
+        height: 330px;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+
+    .main{
+        height: 70vh;
+    }
+    .main_div{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .contenedor_div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .p{
+        line-height: 1.5;
+    }
+    
+    .main_info{
+        max-width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        display: grid;
+        place-content: center;
+        
+    }
+    .img{
+        width: 50%;
+        height: 200px;
+    }
+    .img_div{
+        width: 100%;
+        height: 100px;
+    }
+    p{
+        font-size: 16px;
+    }
+
+    .imagen{
+        width: 50%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    
+    .vision_div{
+        flex-direction: column;
+    }
+    .imagenIndex{
+        height: 300px;
+    }
+}
+
